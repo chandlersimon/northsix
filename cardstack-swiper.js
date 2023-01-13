@@ -1,3 +1,4 @@
+let photoSwiper = new Swiper(".swiper.is-photos", {
 effect: "cards",
 cardsEffect: {
 perSlideOffset: 5,
