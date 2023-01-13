@@ -23,7 +23,7 @@ if (document.getElementById('count').textContent.toLowerCase().includes('?q'.toL
 if (document.getElementById('count').textContent.toLowerCase().includes('?r'.toLowerCase())){numbersaved++;}
 if (document.getElementById('count').textContent.toLowerCase().includes('?s'.toLowerCase())){numbersaved++;}
 setTimeout(function (){
-document.getElementById("indicator").innerHTML = numbersaved;
+document.getElementsByClassName("indicator").innerHTML = numbersaved;
 }, 1);
 }
 changecount();
