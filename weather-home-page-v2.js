@@ -297,7 +297,7 @@ displayWeather: function(data7) {
   document.querySelector("#icon-text7").innerText = icon;
 	document.querySelector("#temp7").innerText = Math.round(temp) + "°F";},
 };
-weather2.fetchWeather(cityname2);
+weather7.fetchWeather(cityname7);
 
 // Set icon image based on text code provided by api call
 const container7 = document.getElementById('icon-text7');
