@@ -13,7 +13,7 @@ displayWeather: function(data) {
 	const {temp} = data.main;
 	document.querySelector(".city.one").innerText = name;
   	document.querySelector(".icon-text.one").innerText = icon;
-	document.querySelectorAll(".tempe.one").forEach(el => el.innerText = Math.round(temp) + "°F";)},
+	document.querySelector(".tempe.one").forEach(el => el.innerText = Math.round(temp) + "°F")},
 };
 weather.fetchWeather(cityname);
 // Set icon image based on text code provided by api call
@@ -59,7 +59,7 @@ displayWeather: function(data2) {
 	const {temp} = data2.main;
 	document.querySelectorAll(".city.two").innerText = name;
   	document.querySelectorAll(".icon-text.two").innerText = icon;
-	document.querySelectorAll(".tempe.two").forEach(el => el.innerText = Math.round(temp) + "°F";)},
+	document.querySelectorAll(".tempe.two").forEach(el => el.innerText = Math.round(temp) + "°F")},
 };
 weather2.fetchWeather(cityname2);
 
