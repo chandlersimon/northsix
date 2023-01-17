@@ -13,6 +13,7 @@ displayWeather: function(data) {
 	const {temp} = data.main;
 	document.querySelector(".city.one").innerText = name;
   	document.querySelector(".icon-text.one").innerText = icon;
+	document.querySelector("#temp1").innerText = Math.round(temp) + "°F";
 	document.querySelector(".tempe.one").innerText = Math.round(temp) + "°F";},
 };
 weather.fetchWeather(cityname);
@@ -60,6 +61,7 @@ displayWeather: function(data2) {
 	const {temp} = data2.main;
 	document.querySelector(".city.two").innerText = name;
   	document.querySelector(".icon-text.two").innerText = icon;
+	document.querySelector("#temp2").innerText = Math.round(temp) + "°F";
 	document.querySelector(".tempe.two").innerText = Math.round(temp) + "°F";},
 };
 weather2.fetchWeather(cityname2);
