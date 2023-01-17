@@ -13,7 +13,7 @@ displayWeather: function(data) {
 	const {temp} = data.main;
 	document.querySelector(".city.one").innerText = name;
   	document.querySelector(".icon-text.one").innerText = icon;
-	document.querySelector(".temp.one").innerText = Math.round(temp) + "°F";}
+	document.querySelector(".tempe.one").innerText = Math.round(temp) + "°F";},
 };
 weather.fetchWeather(cityname);
 
@@ -60,7 +60,7 @@ displayWeather: function(data2) {
 	const {temp} = data2.main;
 	document.querySelector(".city.two").innerText = name;
   	document.querySelector(".icon-text.two").innerText = icon;
-	document.querySelector(".temp.two").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.two").innerText = Math.round(temp) + "°F";},
 };
 weather2.fetchWeather(cityname2);
 
@@ -107,7 +107,7 @@ displayWeather: function(data3) {
 	const {temp} = data3.main;
 	document.querySelector(".city.three").innerText = name;
   	document.querySelector(".icon-text.three").innerText = icon;
-	document.querySelector(".temp.three").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.three").innerText = Math.round(temp) + "°F";},
 };
 weather3.fetchWeather(cityname3);
 
@@ -154,7 +154,7 @@ displayWeather: function(data4) {
 	const {temp} = data4.main;
 	document.querySelector(".city.four").innerText = name;
   	document.querySelector(".icon-text.four").innerText = icon;
-	document.querySelector(".temp.four").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.four").innerText = Math.round(temp) + "°F";},
 };
 weather4.fetchWeather(cityname4);
 
@@ -201,7 +201,7 @@ displayWeather: function(data5) {
 	const {temp} = data5.main;
 	document.querySelector(".city.five").innerText = name;
  	document.querySelector(".icon-text.five").innerText = icon;
-	document.querySelector(".temp.five").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.five").innerText = Math.round(temp) + "°F";},
 };
 weather5.fetchWeather(cityname5);
 
@@ -248,7 +248,7 @@ displayWeather: function(data6) {
 	const {temp} = data6.main;
 	document.querySelector(".city.six").innerText = name;
   	document.querySelector(".icon-text.six").innerText = icon;
-	document.querySelector(".temp.six").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.six").innerText = Math.round(temp) + "°F";},
 };
 weather6.fetchWeather(cityname6);
 
@@ -295,7 +295,7 @@ displayWeather: function(data7) {
 	const {temp} = data7.main;
 	document.querySelector(".city.seven").innerText = name;
   document.querySelector(".icon-text.seven").innerText = icon;
-	document.querySelector(".temp.seven").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.seven").innerText = Math.round(temp) + "°F";},
 };
 weather7.fetchWeather(cityname7);
 
@@ -342,7 +342,7 @@ displayWeather: function(data8) {
 	const {temp} = data8.main;
 	document.querySelector(".city.eight").innerText = name;
   document.querySelector(".icon-text.eight").innerText = icon;
-	document.querySelector(".temp.eight").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".tempe.eight").innerText = Math.round(temp) + "°F";},
 };
 weather8.fetchWeather(cityname8);
 
