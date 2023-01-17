@@ -13,7 +13,7 @@ displayWeather: function(data) {
 	const {temp} = data.main;
 	document.querySelector(".city.one").innerText = name;
   	document.querySelector(".icon-text.one").innerText = icon;
-	document.querySelector(".temp.one").innerText = Math.round(temp) + "°F";},
+	document.querySelector(".temp.one").innerText = temp;},
 };
 weather.fetchWeather(cityname);
 
