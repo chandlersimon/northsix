@@ -106,7 +106,7 @@ displayWeather: function(data3) {
 	const {temp} = data3.main;
 	document.querySelector(".city.three").innerText = name;
   	document.querySelector(".icon-text.three").innerText = icon;
-	document.querySelector(".tempe.three").innerText = Math.round(temp) + "°F";},
+	document.querySelectorAll(".tempe.three").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather3.fetchWeather(cityname3);
 
@@ -153,7 +153,7 @@ displayWeather: function(data4) {
 	const {temp} = data4.main;
 	document.querySelector(".city.four").innerText = name;
   	document.querySelector(".icon-text.four").innerText = icon;
-	document.querySelector(".tempe.four").innerText = Math.round(temp) + "°F";},
+	document.querySelectorAll(".tempe.four").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather4.fetchWeather(cityname4);
 
@@ -200,7 +200,7 @@ displayWeather: function(data5) {
 	const {temp} = data5.main;
 	document.querySelector(".city.five").innerText = name;
  	document.querySelector(".icon-text.five").innerText = icon;
-	document.querySelector(".tempe.five").innerText = Math.round(temp) + "°F";},
+	document.querySelectorAll(".tempe.five").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather5.fetchWeather(cityname5);
 
@@ -247,7 +247,7 @@ displayWeather: function(data6) {
 	const {temp} = data6.main;
 	document.querySelector(".city.six").innerText = name;
   	document.querySelector(".icon-text.six").innerText = icon;
-	document.querySelector(".tempe.six").innerText = Math.round(temp) + "°F";},
+	document.querySelectorAll(".tempe.six").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather6.fetchWeather(cityname6);
 
@@ -290,11 +290,11 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q="+city7+"&units=imperia
 },
 displayWeather: function(data7) {
 	const {name} = data7;
-  const {icon} = data7.weather[0];
+  	const {icon} = data7.weather[0];
 	const {temp} = data7.main;
 	document.querySelector(".city.seven").innerText = name;
-  document.querySelector(".icon-text.seven").innerText = icon;
-	document.querySelector(".tempe.seven").innerText = Math.round(temp) + "°F";},
+  	document.querySelector(".icon-text.seven").innerText = icon;
+	document.querySelectorAll(".tempe.seven").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather7.fetchWeather(cityname7);
 
@@ -337,11 +337,11 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q="+city8+"&units=imperia
 },
 displayWeather: function(data8) {
 	const {name} = data8;
-  const {icon} = data8.weather[0];
+  	const {icon} = data8.weather[0];
 	const {temp} = data8.main;
 	document.querySelector(".city.eight").innerText = name;
-  document.querySelector(".icon-text.eight").innerText = icon;
-	document.querySelector(".tempe.eight").innerText = Math.round(temp) + "°F";},
+  	document.querySelector(".icon-text.eight").innerText = icon;
+	document.querySelectorAll(".tempe.eight").forEach(el => el.innerText = Math.round(temp) + "°F");},
 };
 weather8.fetchWeather(cityname8);
 
