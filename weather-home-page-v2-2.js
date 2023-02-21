@@ -11,6 +11,8 @@ displayWeather: function(data) {
 	const {name} = data;
   	const {icon} = data.weather[0];
 	const {temp} = data.main;
+	const {main} = data.weather[0];
+ 	document.querySelector(".small-caption.one").innerText = main;
 	document.querySelector(".city.one").innerText = name;
   	document.querySelector(".icon-text.one").innerText = icon;
 	document.querySelectorAll(".tempe.one").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -57,6 +59,8 @@ displayWeather: function(data2) {
 	const {name} = data2;
   	const {icon} = data2.weather[0];
 	const {temp} = data2.main;
+	const {main} = data2.weather[0];
+  	document.querySelector(".small-caption.two").innerText = main;
 	document.querySelector(".city.two").innerText = name;
   	document.querySelector(".icon-text.two").innerText = icon;
 	document.querySelectorAll(".tempe.two").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -104,6 +108,8 @@ displayWeather: function(data3) {
 	const {name} = data3;
   	const {icon} = data3.weather[0];
 	const {temp} = data3.main;
+	const {main} = data3.weather[0];
+  	document.querySelector(".small-caption.three").innerText = main;
 	document.querySelector(".city.three").innerText = name;
   	document.querySelector(".icon-text.three").innerText = icon;
 	document.querySelectorAll(".tempe.three").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -151,6 +157,8 @@ displayWeather: function(data4) {
 	const {name} = data4;
   	const {icon} = data4.weather[0];
 	const {temp} = data4.main;
+	const {main} = data4.weather[0];
+  	document.querySelector(".small-caption.four").innerText = main;
 	document.querySelector(".city.four").innerText = name;
   	document.querySelector(".icon-text.four").innerText = icon;
 	document.querySelectorAll(".tempe.four").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -198,6 +206,8 @@ displayWeather: function(data5) {
 	const {name} = data5;
  	const {icon} = data5.weather[0];
 	const {temp} = data5.main;
+	const {main} = data5.weather[0];
+  	document.querySelector(".small-caption.five").innerText = main;
 	document.querySelector(".city.five").innerText = name;
  	document.querySelector(".icon-text.five").innerText = icon;
 	document.querySelectorAll(".tempe.five").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -245,6 +255,8 @@ displayWeather: function(data6) {
 	const {name} = data6;
   	const {icon} = data6.weather[0];
 	const {temp} = data6.main;
+	const {main} = data6.weather[0];
+  	document.querySelector(".small-caption.six").innerText = main;
 	document.querySelector(".city.six").innerText = name;
   	document.querySelector(".icon-text.six").innerText = icon;
 	document.querySelectorAll(".tempe.six").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -292,6 +304,8 @@ displayWeather: function(data7) {
 	const {name} = data7;
   	const {icon} = data7.weather[0];
 	const {temp} = data7.main;
+	const {main} = data7.weather[0];
+  	document.querySelector(".small-caption.seven").innerText = main;
 	document.querySelector(".city.seven").innerText = name;
   	document.querySelector(".icon-text.seven").innerText = icon;
 	document.querySelectorAll(".tempe.seven").forEach(el => el.innerText = Math.round(temp) + "°F");},
@@ -339,6 +353,8 @@ displayWeather: function(data8) {
 	const {name} = data8;
   	const {icon} = data8.weather[0];
 	const {temp} = data8.main;
+	const {main} = data8.weather[0];
+  	document.querySelector(".small-caption.eight").innerText = main;
 	document.querySelector(".city.eight").innerText = name;
   	document.querySelector(".icon-text.eight").innerText = icon;
 	document.querySelectorAll(".tempe.eight").forEach(el => el.innerText = Math.round(temp) + "°F");},
